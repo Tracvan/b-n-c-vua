@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body{
+         background-color: orange;
+     }
+        .square {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            display: inline-block;
+        }
+
+        /* Định dạng hàng và cột */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Định dạng màu nền cho ô vuông */
+        .square:nth-child(odd) {
+            background-color: white;
+        }
+
+        .square:nth-child(even) {
+            background-color: black;
+        }
+    </style>
+    <title>Chess Board</title>
+</head>
+<body>
+<span style="margin: 25px ">1</span>
+<span style="margin-left:15px">2</span>
+<span style="margin-left:45px">3</span>
+<span style="margin-left:42px">4</span>
+<span style="margin-left:45px">5</span>
+<span style="margin-left:40px">6</span>
+<span style="margin-left:45px">7</span>
+<span style="margin-left:44px">8</span>
+
+<div class="board">
+
+    <div class="row">
+        <span>A</span><div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="row">
+        <span>B</span><div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="row">
+        <span>C</span><div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="row">
+        <span>D</span><div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div><div class="row">
+    <span>E</span><div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+</div>
+
+    <div class="row">
+      <span>F</span><div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</div>
+</body>
+</html>
